@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-color: #1c1c1c;
+        :root {
+            --bg-color: #29292c;
+            --bg2: #915331;
+            --seond-bg: #e94822;
+            --third-bg: #cf8115;
+            --fourth-bg: #efd510;
+        }
+
+        body {
+            background: var(--bg2);
+        }
+
+        img:nth-child(2) {
+            filter: blur(-2px);
+            transform: scaleZ(1.1);
+            box-shadow: inset;
         }
     </style>
 </head>
+
 <body>
-<img src="B A C BOT LOGO.png" alt="" style="width: 200px; height: 200px;">
+
+    <img src="B A C BOT LOGO.png" alt="" style="width: 200px; height: 200px;">
+
+    <img src="B A C BOT LOGO without text.png" alt="" width="200"
+        style="backdrop-filter: blur(200px); background-color: rgba(255, 255, 255, 0);">
 </body>
+
 </html>
