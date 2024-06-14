@@ -1,0 +1,23 @@
+:root {
+    --bg-color: #29292c;
+    --bg2: #915331;
+    --seond-bg: #e94822;
+    --third-bg: #cf8115;
+    --fourth-bg: #efd510;
+}
+
+.blur {           /* blur*/
+    filter: blur(6px);
+}
+
+.ds {              /* drop shadow*/
+    filter: drop-shadow(3px 3px 10px #000);
+}
+
+.dsb {             /* drop-shadow and blur */
+    filter: blur(8px) drop-shadow(3px 3px 10px #000);
+}
+
+body {
+    background: var(--bg2);
+}
