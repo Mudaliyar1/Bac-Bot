@@ -18,7 +18,7 @@
         $(document).ready(function () {
             $("#ham").click(function () {
                 $("#hamburger").fadeToggle(200);
-                $("#hamburger").css({ "background-color": "transparent", "border-radius": "20px", "backdrop-filter": "blur(15px)" });
+                $("#hamburger").css({ "position": "fixed", "top": "60px", "background-color": "transparent", "backdrop-filter": "blur(15px)", "width": "100vw" });
             });
 
             $("#hamburger").click(function () {
@@ -98,8 +98,9 @@
 
     <main>
 
-        <svg width="607" height="472" viewBox="0 30 607 472" fill="none" xmlns="http://www.w3.org/2000/svg"
-            style="position: absolute; top: 60px; right: 0; z-index: -1 ;">
+
+        <svg width="607" height="472" viewBox="0 30 607 472" fill="none" class="svg-main"
+            xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 70px; right: 0; z-index: -1 ;">
             <g filter="url(#filter0_ddddf_0_1)">
                 <path
                     d="M349.519 97.5525C350.128 97.2095 350.872 97.2095 351.481 97.5525L382.823 115.199C383.453 115.553 383.842 116.22 383.842 116.942V152.149C383.842 152.871 383.453 153.537 382.823 153.892L351.481 171.538C350.872 171.881 350.128 171.881 349.519 171.538L318.177 153.892C317.547 153.537 317.158 152.871 317.158 152.149V116.942C317.158 116.22 317.547 115.553 318.177 115.199L349.519 97.5525Z"
@@ -160,7 +161,8 @@
                     <feOffset dy="4"></feOffset>
                     <feGaussianBlur stdDeviation="2"></feGaussianBlur>
                     <feComposite in2="hardAlpha" operator="out"></feComposite>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                    </feColorMatrix>
                     <feBlend mode="normal" in2="effect3_dropShadow_0_1" result="effect4_dropShadow_0_1"></feBlend>
                     <feBlend mode="normal" in="SourceGraphic" in2="effect4_dropShadow_0_1" result="shape"></feBlend>
                     <feGaussianBlur stdDeviation="0.5" result="effect5_foregroundBlur_0_1"></feGaussianBlur>
@@ -186,7 +188,8 @@
                     <feOffset dy="4"></feOffset>
                     <feGaussianBlur stdDeviation="2"></feGaussianBlur>
                     <feComposite in2="hardAlpha" operator="out"></feComposite>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                    </feColorMatrix>
                     <feBlend mode="normal" in2="effect1_dropShadow_0_1" result="effect2_dropShadow_0_1"></feBlend>
                     <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_0_1" result="shape"></feBlend>
                     <feGaussianBlur stdDeviation="0.5" result="effect3_foregroundBlur_0_1"></feGaussianBlur>
@@ -253,7 +256,8 @@
                     <feOffset dy="4"></feOffset>
                     <feGaussianBlur stdDeviation="2"></feGaussianBlur>
                     <feComposite in2="hardAlpha" operator="out"></feComposite>
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                    </feColorMatrix>
                     <feBlend mode="normal" in2="effect3_dropShadow_0_1" result="effect4_dropShadow_0_1"></feBlend>
                     <feBlend mode="normal" in="SourceGraphic" in2="effect4_dropShadow_0_1" result="shape"></feBlend>
                     <feGaussianBlur stdDeviation="0.5" result="effect5_foregroundBlur_0_1"></feGaussianBlur>
@@ -292,14 +296,16 @@
         </svg>
 
         <div class="main-text">
-            <img src="saphire-logo.png" alt="" style="height: 80px; width: 80px;">
-            <span>
-                <h1
-                    style="color: white; margin-left: 92px; margin-top: -74px; font-size: 3rem; font-family: Verdana, Geneva, Tahoma, sans-serif;">
-                    B A C</h1>
-            </span>
 
-            <div>
+            <div class="titleImg" style="display: flex; align-items: center; gap: 15px;">
+                <img src="saphire-logo.png" alt="" style="height: 80px; width: 80px;">
+                <span>
+                    <h1 style="color: white;   font-size: 3rem; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                        B A C</h1>
+                </span>
+            </div>
+
+            <div class="info">
                 <p style="color: #e1e1e1; font-size: 20px; font-weight: 550;
                 font-family: Verdana, Geneva, Tahoma, sans-serif; line-height: 35px;">
                     Multi-purpose Discord-Bot. <br>
@@ -307,8 +313,9 @@
                     Completely free.
                 </p>
             </div>
+
             <br>
-            <div style="display: flex;  gap: 10px; margin-left: -20px;">
+            <div class="btns">
                 <a href="">
                     <button
                         style="width: 170px; height: 34px; border-radius: 20px; font-size: 16px; font-weight: 550; color: white; background: linear-gradient(to right, #78beff, #0084ff); border: 0px  transparent;">Add
@@ -325,6 +332,19 @@
 
 
         </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui dolores nisi vitae commodi eum doloribus nihil quaerat saepe laudantium ut nostrum beatae, itaque voluptatum quia unde! Nemo, facilis expedita?
+        Mollitia corrupti numquam repellat expedita, rem necessitatibus quis odio doloremque et, eveniet officiis dolorem consectetur id aliquid similique beatae optio ut suscipit, praesentium delectus exercitationem autem quidem? Placeat, iure itaque?
+        Aspernatur voluptatibus nulla doloribus aliquam non quas maxime illo velit minus beatae enim dicta quis fugiat suscipit, quae nesciunt nihil veniam blanditiis facilis veritatis dolor commodi! Deleniti obcaecati modi sed!
+        Reiciendis minima exercitationem quibusdam at eveniet dolorem maiores cupiditate a dolore accusamus dicta, alias rem corrupti quas aut fugit porro sed similique. Impedit blanditiis pariatur eveniet aperiam aliquam, natus accusantium?
+        Debitis, earum saepe laborum quasi corporis soluta voluptatibus explicabo? Impedit sunt eaque omnis, commodi, alias reprehenderit qui illo magni facere dolores eligendi a praesentium, vero optio exercitationem ab nesciunt accusantium?
+        Qui laudantium ipsam fuga ullam et aut asperiores autem dicta tempora sequi, doloribus fugit temporibus sunt cupiditate, tempore pariatur ex quasi mollitia hic voluptate, voluptatem nihil? Repudiandae quod omnis numquam.
+        Consequatur illo, dolor, totam vitae officiis voluptatum minima perferendis assumenda quibusdam pariatur sunt perspiciatis odio magni. Eum fugit nemo ex modi molestiae! Ratione nobis ut optio sequi hic sunt reprehenderit.
+        Accusamus rerum necessitatibus repellendus doloremque exercitationem explicabo quis, at ducimus vitae enim est, error illum aliquam suscipit repellat nobis maiores distinctio ad iste assumenda quidem et quia. Reprehenderit, veritatis maxime!
+        Iste pariatur distinctio nulla fugit eaque vitae quaerat sed voluptatibus accusantium officia esse quidem, rem veniam cum culpa laboriosam eligendi cumque omnis neque id! Nobis culpa ad fugit nihil impedit.
+        Consequuntur recusandae eum accusantium corrupti nam, quis explicabo, quam voluptatum, at amet exercitationem cupiditate. Voluptate nostrum nulla corrupti dolore quo, dignissimos quis at, dolorem cumque maxime odit iusto debitis ullam
+        
+        .</p>
 
     </main>
 
