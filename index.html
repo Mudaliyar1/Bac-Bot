@@ -17,13 +17,18 @@
 
         $(document).ready(function () {
             $("#ham").click(function () {
-                $("#hamburger").toggle();
+                $("#hamburger").fadeToggle(200);
                 $("#hamburger").css({ "background-color": "transparent", "border-radius": "20px", "backdrop-filter": "blur(15px)" });
             });
 
             $("#hamburger").click(function () {
-                $("#hamburger").css({ "display": "none" });
+                $("#hamburger").fadeOut(300);
             });
+
+
+            // $("#hamburger").click(function () {
+            //     $("#hamburger").css({ "display": "none", "transition": "all 2s ease" });
+            // });
 
 
         });
