@@ -6,15 +6,18 @@
     --fourth-bg: #efd510;
 }
 
-.blur {           /* blur*/
+.blur {
+    /* blur*/
     filter: blur(6px);
 }
 
-.ds {              /* drop shadow*/
+.ds {
+    /* drop shadow*/
     filter: drop-shadow(3px 3px 10px #000);
 }
 
-.dsb {             /* drop-shadow and blur */
+.dsb {
+    /* drop-shadow and blur */
     filter: blur(8px) drop-shadow(3px 3px 10px #000);
 }
 
@@ -23,17 +26,42 @@ body {
 }
 
 
-nav{
+nav {
     width: 100%;
     height: 60px;
     backdrop-filter: blur(10px);
     /*box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.32); */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.18); 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
     background: rgba(237, 237, 237, .1);
-    background: rgba(0,0, 0,0);
+    background: rgba(0, 0, 0, 0);
     position: fixed;
     z-index: 2;
     margin-top: -10px;
     margin-left: -8px;
     color: white;
+}
+
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: -26px;
+    gap: 50px;
+
+}
+
+.a-tag {
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.nav-menu.active{
+    text-decoration: underline;
+}
+
+.nav-menu.active a{
+    color: #fff;
 }
