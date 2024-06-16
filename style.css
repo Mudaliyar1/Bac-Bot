@@ -211,10 +211,7 @@ main{
         /* z-index: 1; */
     }
 
-    .info {
-        
-    }
-
+    
     .btns{
         display: flex;
         flex-direction: column;
@@ -222,3 +219,4 @@ main{
     }
 
 }
+
