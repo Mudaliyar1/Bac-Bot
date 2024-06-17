@@ -3,7 +3,8 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 3px;
+    
 
 }
 
@@ -190,12 +191,15 @@ nav {
 main {
     position: absolute;
     top: 90px;
+    /* overflow-x: hidden; */
+    /* width: 98vw; */
 }
 
 
 .main-text {
     width: 94vw;
     height: 90vh;
+    overflow-x: hidden;
 }
 
 .titleImg {
@@ -237,7 +241,7 @@ main {
 
     .svg-main{
         width: 95vw;
-        display: none;
+        /* display: none; */
         align-items: center;
         justify-content: center;
     }
