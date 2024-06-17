@@ -203,7 +203,7 @@ main {
 
 .main-text {
     width: 94vw;
-    height: 80vh;
+    height: 75vh;
     overflow-x: hidden;
 }
 
@@ -279,7 +279,7 @@ main {
 
 .wave {
     display: flex;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     flex-direction: column;
     /* gap: 250px; */
     width: 100vw;
