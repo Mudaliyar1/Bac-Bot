@@ -237,7 +237,7 @@ main {
 
     .svg-main{
         width: 95vw;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
     }
