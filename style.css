@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
     overflow-x: hidden;
     width: 100vw;
@@ -9,7 +10,7 @@ body {
 
 ::-webkit-scrollbar {
     width: 3px;
-    
+
 
 }
 
@@ -244,12 +245,13 @@ main {
 
 @media (max-width:700px) {
 
-    .svg-main{
+    .svg-main {
         width: 95vw;
         /* display: none; */
         align-items: center;
         justify-content: center;
     }
+
     .main-text {
         position: relative;
         top: 80px;
@@ -270,7 +272,7 @@ main {
 }
 
 @media (max-width:350px) {
-    .svg-main{
+    .svg-main {
         width: 80vw;
         position: absolute;
         left: -12px;
@@ -301,7 +303,7 @@ main {
 }
 
 
-.main-wave-txt{
+.main-wave-txt {
     position: relative;
     top: -550px;
     left: 50px;
@@ -309,13 +311,13 @@ main {
 }
 
 
-.txt-animation{
+.txt-animation {
     width: 150px;
     height: 10px;
     background-color: #0084ff;
-    animation: txt-animate  3s ease infinite;
+    animation: txt-animate 3s ease infinite;
 
-    
+
 }
 
 @keyframes txt-animate {
@@ -325,94 +327,124 @@ main {
     to{
         width: 150px;
     }
+
 }
 
-@media (max-width:1202px){
-    .main-wave-txt{
+@media (max-width:1202px) {
+    .main-wave-txt {
         top: -530px;
     }
 }
-@media (max-width:1124px){
-    .main-wave-txt{
+
+@media (max-width:1124px) {
+    .main-wave-txt {
         top: -500px;
     }
 }
-@media (max-width:1010px){
-    .main-wave-txt{
+
+@media (max-width:1010px) {
+    .main-wave-txt {
         top: -480px;
     }
 }
-@media (max-width:932px){
-    .main-wave-txt{
+
+@media (max-width:932px) {
+    .main-wave-txt {
         top: -460px;
     }
 }
-@media (max-width:877px){
-    .main-wave-txt{
+
+@media (max-width:877px) {
+    .main-wave-txt {
         top: -440px;
     }
 }
-@media (max-width:790px){
-    .main-wave-txt{
+
+@media (max-width:790px) {
+    .main-wave-txt {
         top: -420px;
     }
 }
-@media (max-width:739px){
-    .main-wave-txt{
+
+@media (max-width:739px) {
+    .main-wave-txt {
         top: -410px;
         left: 40px;
     }
-    .main-wave-txt>p{
+
+    .main-wave-txt>p {
         max-width: 650px;
     }
 }
-@media (max-width:678px){
-    .main-wave-txt{
+
+@media (max-width:678px) {
+    .main-wave-txt {
         top: -390px;
     }
-    .main-wave-txt>p{
+
+    .main-wave-txt>p {
         max-width: 600px;
     }
 }
-@media (max-width:620px){
-    .main-wave-txt{
+
+@media (max-width:620px) {
+    .main-wave-txt {
         top: -370px;
     }
-    .main-wave-txt>p{
+
+    .main-wave-txt>p {
         max-width: 560px;
     }
 }
-@media (max-width:560px){
-    .main-wave-txt{
+
+@media (max-width:560px) {
+    .main-wave-txt {
         top: -350px;
         left: 30px;
     }
-    .main-wave-txt>p{
+
+    .main-wave-txt>p {
         max-width: 520px;
     }
 }
-@media (max-width:501px){
-    .main-wave-txt{
+
+@media (max-width:501px) {
+    .main-wave-txt {
         top: -330px;
         left: 25px;
     }
-    .main-wave-txt>h1>div{
+
+    .main-wave-txt>h1>div {
         font-size: 25px;
     }
-    .main-wave-txt>p{
+
+    .main-wave-txt>p {
         max-width: 480px;
     }
 }
-@media (max-width:431px){
-    .main-wave-txt{
+
+@media (max-width:431px) {
+    .main-wave-txt {
         top: -310px;
         left: 20px;
     }
-    .main-wave-txt>h1>div{
+
+    .main-wave-txt>h1>div {
         font-size: 25px;
     }
-    .main-wave-txt>p{
+
+    .main-wave-txt>p {
         max-width: 480px;
         font-size: 17px;
     }
 }
+
+
+.text{
+    font-size: 30px;
+    color: white;
+    text-decoration: underline;
+    animation: text 2s ease infinite;
+    margin-top: -200px;
+}
+
