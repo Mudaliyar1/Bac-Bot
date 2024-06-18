@@ -487,12 +487,12 @@ main {
 
 .main1-range {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .main-range {
-    flex-basis: 200;
-    flex-grow: 1;
+    /* flex-basis: 200; */
+    /* flex-grow: 1; */
     scrollbar-color: black;
     padding-bottom: 20px;
 
@@ -500,12 +500,13 @@ main {
 
 .main-range>div {
     border-radius: 5px;
-    width: 250px;
+    width: 900px;
     height: 40px;
     color: white;
     background-color: #ffffff1a;
-    padding: 5px;
-    animation: scroll 10s ease-in-out infinite;
+    padding: 7px;
+    animation: scrolll 10s ease-in-out  infinite alternate-reverse;
+
 
 }
 
@@ -518,16 +519,27 @@ main {
 
 }
 
-@keyframes scroll {
+@keyframes scrolll {
     from {
-        transform: translateX(-1000px);
+        transform: translateX(-1650px);
     }
 
     to {
         transform: translateX(10px);
     }
 }
+.main-range>div>img:hover{
+    animation: img-rotate  1s ease;
+}
 
+@keyframes img-rotate {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
 .div-scroller {
     padding-left: 10px;
     padding-right: 10px;
@@ -598,7 +610,7 @@ main {
 }
 @media (max-width:479px) {
     .div-scroller {
-        margin-top: -400px;
+        margin-top: -400px;   
         /* display: flex; */
         /* flex-direction: row; */
     }
