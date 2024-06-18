@@ -292,7 +292,7 @@ main {
 .blackbox {
     background-color: #000;
     opacity: 0.5;
-    height: 200px;
+    height: 400px;
     width: 100vw;
     overflow-x: hidden;
 
@@ -331,45 +331,80 @@ main {
 
 }
 
+@media (max-width:1917px) {
+    .main-wave-txt {
+        top: -930px;
+    }
+}
+@media (max-width:1867px) {
+    .main-wave-txt {
+        top: -890px;
+    }
+}
+@media (max-width:1781px) {
+    .main-wave-txt {
+        top: -830px;
+    }
+}
+@media (max-width:1600px) {
+    .main-wave-txt {
+        top: -800px;
+    }
+}
+@media (max-width:1459px) {
+    .main-wave-txt {
+        top: -770px;
+    }
+}
+@media (max-width:1371px) {
+    .main-wave-txt {
+        top: -750px;
+    }
+}
+@media (max-width:1289px) {
+    .main-wave-txt {
+        top: -730px;
+    }
+}
 @media (max-width:1202px) {
     .main-wave-txt {
-        top: -530px;
+        top: -700px;
     }
 }
 
 @media (max-width:1124px) {
     .main-wave-txt {
-        top: -500px;
+        top: -670px;
     }
 }
 
 @media (max-width:1010px) {
     .main-wave-txt {
-        top: -480px;
+        top: -640px;
     }
 }
 
 @media (max-width:932px) {
     .main-wave-txt {
-        top: -460px;
+        top: -610px;
     }
 }
 
 @media (max-width:877px) {
     .main-wave-txt {
-        top: -440px;
+        top: -580px;
     }
 }
 
 @media (max-width:790px) {
     .main-wave-txt {
-        top: -420px;
+        top: -550px;
     }
 }
 
 @media (max-width:739px) {
     .main-wave-txt {
-        top: -410px;
+        top: -530px;
         left: 40px;
     }
 
@@ -380,7 +415,7 @@ main {
 
 @media (max-width:678px) {
     .main-wave-txt {
-        top: -390px;
+        top: -510px;
     }
 
     .main-wave-txt>p {
@@ -390,7 +425,7 @@ main {
 
 @media (max-width:620px) {
     .main-wave-txt {
-        top: -370px;
+        top: -500px;
     }
 
     .main-wave-txt>p {
@@ -400,7 +435,7 @@ main {
 
 @media (max-width:560px) {
     .main-wave-txt {
-        top: -350px;
+        top: -490px;
         left: 30px;
     }
 
@@ -411,7 +446,7 @@ main {
 
 @media (max-width:501px) {
     .main-wave-txt {
-        top: -330px;
+        top: -470px;
         left: 25px;
     }
 
@@ -426,7 +461,7 @@ main {
 
 @media (max-width:431px) {
     .main-wave-txt {
-        top: -310px;
+        top: -450px;
         left: 20px;
     }
 
@@ -468,7 +503,7 @@ main {
     width: 250px;
     height: 40px;
     color: white;
-    background-color: red;
+    background-color: #ffffff1a;
     padding: 5px;
     animation: scroll 10s ease-in-out infinite;
 
@@ -499,7 +534,27 @@ main {
     margin-top: -500px;
 }
 
-@media (max-width:1160px) {
+@media (max-width:1917px) {
+    .div-scroller {
+        margin-top: -700px;
+    }
+}
+@media (max-width:1551px) {
+    .div-scroller {
+        margin-top: -650px;
+    }
+}
+@media (max-width:1477px) {
+    .div-scroller {
+        margin-top: -610px;
+    }
+}
+@media (max-width:1348px) {
+    .div-scroller {
+        margin-top: -580px;
+    }
+}
+@media (max-width:1163px) {
     .div-scroller {
         margin-top: -480px;
     }
@@ -520,45 +575,50 @@ main {
         margin-top: -400px;
     }
 }
-@media (max-width:685px) {
+@media (max-width:828px) {
     .div-scroller {
-        margin-top: -350px;
-        display: flex;
-        flex-direction: row;
+        margin-top: -430px;
+        /* display: flex; */
+        /* flex-direction: row; */
     }
 }
 @media (max-width:685px) {
     .div-scroller {
-        margin-top: -340px;
-        display: flex;
-        flex-direction: row;
+        margin-top: -410px;
+        /* display: flex; */
+        /* flex-direction: row; */
     }
 }
 @media (max-width:517px) {
     .div-scroller {
-        margin-top: -320px;
-        display: flex;
-        flex-direction: row;
+        margin-top: -400px;
+        /* display: flex; */
+        /* flex-direction: row; */
     }
 }
 @media (max-width:479px) {
     .div-scroller {
-        margin-top: -300px;
-        display: flex;
-        flex-direction: row;
+        margin-top: -400px;
+        /* display: flex; */
+        /* flex-direction: row; */
     }
 }
 @media (max-width:432px) {
     .div-scroller {
-        margin-top: -280px;
-        display: flex;
-        flex-direction: row;
+        margin-top: -400px;
+        /* display: flex; */
+        /* flex-direction: row; */
     }
 }
 @media (max-width:368px) {
     .div-scroller {
-        margin-top: -290px;
-        display: flex;
-        flex-direction: row;
+        margin-top: -400px;
+        /* display: flex; */
+        /* flex-direction: row; */
     }
 }
+
+
+
+
+
