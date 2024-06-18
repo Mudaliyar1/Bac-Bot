@@ -11,7 +11,6 @@ body {
 ::-webkit-scrollbar {
     width: 3px;
 
-
 }
 
 ::-webkit-scrollbar-track {
@@ -197,15 +196,16 @@ nav {
 main {
     position: absolute;
     top: 90px;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     /* width: 98vw; */
+    width: 100vw;
 }
 
 
 .main-text {
     width: 94vw;
     height: 75vh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .titleImg {
@@ -321,10 +321,11 @@ main {
 }
 
 @keyframes txt-animate {
-    from{
+    from {
         width: 0px;
     }
-    to{
+
+    to {
         width: 150px;
     }
 
@@ -440,7 +441,7 @@ main {
 }
 
 
-.text{
+.text {
     font-size: 30px;
     color: white;
     text-decoration: underline;
@@ -448,3 +449,116 @@ main {
     margin-top: -200px;
 }
 
+
+.main1-range {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-range {
+    flex-basis: 200;
+    flex-grow: 1;
+    scrollbar-color: black;
+    padding-bottom: 20px;
+
+}
+
+.main-range>div {
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    animation: scroll 10s ease-in-out infinite;
+
+}
+
+
+.main-range::-webkit-scrollbar-thumb,
+.main-range::-webkit-scrollbar {
+    /* background-color: black; */
+    height: 0px;
+    padding-top: 20px;
+
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(-1000px);
+    }
+
+    to {
+        transform: translateX(10px);
+    }
+}
+
+.div-scroller {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: -500px;
+}
+
+@media (max-width:1160px) {
+    .div-scroller {
+        margin-top: -480px;
+    }
+}
+
+@media (max-width:1127px) {
+    .div-scroller {
+        margin-top: -460px;
+    }
+}
+@media (max-width:933px) {
+    .div-scroller {
+        margin-top: -440px;
+    }
+}
+@media (max-width:878px) {
+    .div-scroller {
+        margin-top: -400px;
+    }
+}
+@media (max-width:685px) {
+    .div-scroller {
+        margin-top: -350px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (max-width:685px) {
+    .div-scroller {
+        margin-top: -340px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (max-width:517px) {
+    .div-scroller {
+        margin-top: -320px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (max-width:479px) {
+    .div-scroller {
+        margin-top: -300px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (max-width:432px) {
+    .div-scroller {
+        margin-top: -280px;
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (max-width:368px) {
+    .div-scroller {
+        margin-top: -290px;
+        display: flex;
+        flex-direction: row;
+    }
+}
