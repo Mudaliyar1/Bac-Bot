@@ -19,8 +19,9 @@ body {
 
 ::-webkit-scrollbar-thumb {
     background-color: grey;
-    border-radius: 10px;
+    border-radius: 8px;
 }
+
 
 :root {
     --bg-color: #29292c;
@@ -503,15 +504,16 @@ main {
 
 .main-range>div {
     border-radius: 5px;
-    width: 900px;
+    width: 250px;
     height: 40px;
     color: white;
     background-color: #ffffff1a;
     padding: 7px;
-    animation: scrolll 10s ease-in-out  infinite alternate;
-
+    animation: scrolll 10s ease-in-out  infinite alternate-reverse;
+    
 
 }
+
 
 
 .main-range::-webkit-scrollbar-thumb,
@@ -524,13 +526,221 @@ main {
 
 @keyframes scrolll {
     from {
-        transform: translateX(-1650px);
+        transform: translateX(-1500px);
     }
 
     to {
-        transform: translateX(10px);
+        transform: translateX(1500px);
     }
 }
+
+@media(max-width:1242px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1550px);
+        }
+    
+        to {
+            transform: translateX(1550px);
+        }
+    }
+    
+}
+@media(max-width:1201px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1570px);
+        }
+    
+        to {
+            transform: translateX(1570px);
+        }
+    }
+    
+}
+@media(max-width:1154px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1600px);
+        }
+    
+        to {
+            transform: translateX(1600px);
+        }
+    }
+    
+}
+@media(max-width:1040px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1630px);
+        }
+    
+        to {
+            transform: translateX(1630px);
+        }
+    }
+    
+}
+@media(max-width:990px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1660px);
+        }
+    
+        to {
+            transform: translateX(1660px);
+        }
+    }
+    
+}
+@media(max-width:930px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1690px);
+        }
+    
+        to {
+            transform: translateX(1690px);
+        }
+    }
+    
+}
+@media(max-width:886px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1710px);
+        }
+    
+        to {
+            transform: translateX(1710px);
+        }
+    }
+    
+}
+
+@media(max-width:840px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1740px);
+        }
+    
+        to {
+            transform: translateX(1740px);
+        }
+    }
+    
+}
+@media(max-width:765px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1760px);
+        }
+    
+        to {
+            transform: translateX(1760px);
+        }
+    }
+    
+}
+@media(max-width:715px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1790px);
+        }
+    
+        to {
+            transform: translateX(1790px);
+        }
+    }
+    
+}
+@media(max-width:680px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1810px);
+        }
+    
+        to {
+            transform: translateX(1810px);
+        }
+    }
+    
+}
+@media(max-width:650px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1830px);
+        }
+    
+        to {
+            transform: translateX(1830px);
+        }
+    }
+    
+}
+@media(max-width:600px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1860px);
+        }
+    
+        to {
+            transform: translateX(1860px);
+        }
+    }
+    
+}
+@media(max-width:540px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1890px);
+        }
+    
+        to {
+            transform: translateX(1890px);
+        }
+    }
+    
+}
+@media(max-width:480px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1910px);
+        }
+    
+        to {
+            transform: translateX(1910px);
+        }
+    }
+    
+}
+@media(max-width:420px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1930px);
+        }
+    
+        to {
+            transform: translateX(1930px);
+        }
+    }
+    
+}
+@media(max-width:400px){
+    @keyframes scrolll {
+        from {
+            transform: translateX(-1950px);
+        }
+    
+        to {
+            transform: translateX(1950px);
+        }
+    }
+    
+}
+    
+
 .main-range>div>img:hover{
     animation: img-rotate  1s ease;
 }
