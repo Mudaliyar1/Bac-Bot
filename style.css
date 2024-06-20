@@ -509,7 +509,7 @@ main {
     color: white;
     background-color: #ffffff1a;
     padding: 7px;
-    animation: scrolll 15s ease-in-out  infinite alternate-reverse;
+    animation: scrolll 23s ease-in-out  infinite alternate;
     
 
 }
