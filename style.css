@@ -843,7 +843,85 @@ main {
     }
 }
 
+.txt-animation-2 {
+    width: 300px;
+    height: 10px;
+    background-color: #0084ff;
+    animation: txt-animate-2 3s ease infinite;
 
 
+}
 
+@keyframes txt-animate-2 {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 300px;
+    }
+
+}
+
+
+.div-4th-1st{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.div-4th-1st>div{
+    width: 200px;
+    height: 200px;
+    background-image: url(main-logo.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    flex-basis: 200;
+    padding: 20px;
+    margin-left: -200px;
+}
+
+.div-4th-1st>div:nth-child(1){
+    background-image: none;
+    color: white;
+    width: 400px;
+    height: 50px;
+}
+.div-4th-1st>div:nth-child(2){
+    width: 300px;
+    height: 300px;
+    margin-left: 70px;
+}
+
+@media(max-width:1000px)
+{
+    .div-4th-1st{
+        position: absolute;
+        top: 130%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+    }
+
+    .div-4th-1st>div{
+        margin-left: 0px;
+    }
+    
+    .div-4th-1st{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
+    
+    }
+    
+
+    .div-4th-1st>div:nth-child(1){
+        position: absolute;
+        top: -40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+    }
+}
 
